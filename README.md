@@ -1,1 +1,2 @@
-# SPTS-Script
+# SPTS Script
+ By Pickstr
