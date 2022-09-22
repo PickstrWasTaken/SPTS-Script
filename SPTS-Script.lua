@@ -1,10 +1,5 @@
 -- Open the Dev Console (F9) to read information about the GUI --
 
-print("\nSuper Power Training Simulator LuckyGui Created by LuckyMMB @ V3rmillion.net\nDiscord https://discord.gg/GKzJnUC\nLast updated 5th December 2018")
-print("\nThe Y Key activates Panic Mode and teleports you to the Safe Zone. This can be changed to another key.")
-print("\nUse the OnDeath Return button to respawn you and return to your previous position\nwhen you are killed. Great for farming BT in zones as soon as you\ncan take 1 hit and survive (eg. 6Bil in 100Bil+ BT Taining Area).")
-print("\nOnce your Fist, Body and Psychic stats are higher you will not be able to Auto\nFarm more than one skill at a time as you need to be near the\nlocation you are farming at.")
-
 local plr = game:GetService("Players").LocalPlayer
 local char = plr.Character
 local root = char.HumanoidRootPart
@@ -17,13 +12,6 @@ local CoreGui = game:GetService("CoreGui")
 local Run = game:GetService("RunService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 local human = plr.Character:WaitForChild("Humanoid")
-
--- Anti Idle --
-local VirtualUser=game:service'VirtualUser'
-game:service'Players'.LocalPlayer.Idled:connect(function()
-	VirtualUser:CaptureController()
-	VirtualUser:ClickButton2(Vector2.new())
-end)
 
 showstartmessage = true
 showtopplayersactive = false
